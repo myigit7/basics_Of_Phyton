@@ -6,7 +6,7 @@ print(age)
 
 print ("you are " + str(age) + " years old") # TYPE CASTING
 print ("you are" , age,"years old") # We got delete the spaces before and after the strings. 
-print (f"you are {age} years old") # This called "f-string"
+print (f"you are {age} years old") # This called "f-string" COMMONLY USE
 
 # Data Types
 

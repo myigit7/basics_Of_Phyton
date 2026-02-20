@@ -1,4 +1,4 @@
-age = int(input("Enter your age"))
+age = int(input("Enter your age")) # We got response from user with "input" command.
 
 if age >= 65:
     print ("You should not drive a car")
