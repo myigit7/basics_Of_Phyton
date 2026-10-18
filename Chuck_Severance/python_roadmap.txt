@@ -1,0 +1,4 @@
+1- chuck Severance python for everybody
+2- The Odin Project - web app
+3- Harvard CS50 Course - Tüm bilgisayar bilimlerinin temelleri
+4- Harvard CS50 for web programming course

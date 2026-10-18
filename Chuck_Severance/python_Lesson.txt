@@ -1,0 +1,165 @@
+x=2 matematiksel olarak aynı şeyi ifade etmiyor, 2 değerini al ve hafızanda bir yere koy ve ben sana x dediğim zaman oradan çağır. X bir variable ben seçtim bunu.
+x= x+2 demekse seçmiş olduğumuz x değerini al ve ona 2 yi ekleyip x in değerini yenile.
+
+Sequential (Ardışık) Steps: 
+
+x = 2
+
+print(x)= 2
+
+x = x+2
+
+print(x) = 4
+----------
+
+Conditional Steps te if/else gibi olan adımlardan bahsediliyor.
+------
+Repeated steps while for gibi örnekler bahsediliyor.
+
+n = 5 
+while n>0 :
+	print(n)
+	n=n-1
+print('finish')
+-------------------------
+
+Expressions yani matematiksel işlemlerde öncelikler
+
+Parantez
+Üssü kuvvetleri
+Çarpıma / bölme
+toplama
+-----------------------
+
+Python knows the type of the variables. ex: integer, strings, boolean it called 'type'
+
+farklı typeları aynı yerde kullanmak istediğimizde hata atıyor dönüştürmen gerekli diyor yani.
+
+NOTE: Traceback hatası atıyor. Traceback always means I quit. 
+
+If we did not know the type of the variable we should use 'type' word. 
+
+----------
+
+
+Type Conversions
+
+print (float(99)+100) --> 99'u float yaptık. 
+199.0
+
+Yani float yazarak integer bir sayıyı floata çevirdik, bunun gibi örnekler bir sürü olabilir.
+
+------
+
+Integer Division
+
+Bölme işlemi yaparken calculator gibi çalışıyor program, yani nasıl iki integer sayıyı bölmek istediğimizde floata çeviriyor.
+
+print(10/5)
+5.0
+
+print(9/2)
+4.5 gibi örnekler verilebilir. 
+
+----------
+
+String Conversions
+
+sval= '123'
+type(sval)
+<class 'str'>
+print (sval + 1)
+burada Traceback atıyor, çünkü kafası karıştı ben string bir değere integer bir değer eklemeye çalıştım, o yüzden değer değiştirme yapacağız.
+
+ival= int(sval)
+type(ival)
+<class 'int'>
+print(ival+1)
+124
+---------
+
+User Input
+
+input() fonksiyonu bize kullanıcıdan geri bildirim almamızı sağlıyor.
+
+name= input('Who are you? ')
+print('Welcome', name)
+
+output Welcome Mehmet
+
+kullanıcıdan alınan cevaplar string olarak geliyor, yani eğer bir sayı cevabı almak istiyorsak integera dönüştürmemiz gerekecektir.
+
+------
+Comments in Python
+
+# comment atıyor.
+
+------
+Conditional Steps
+
+If statements buraya giriyor. 
+
+
+Comparision Operators
+
+== Equal to demektir.
+= bu şekilde olanı assignment için kullanılıyordu.
+
+
+x=5
+if x>2 :
+	print () --> Bu şekilde içeri girinti olunca if statement'ın kısmı oluyor
+	print ()
+print()--> Bu şekilde dışarıya doğru kalırsa da bitiş kısmı için doğru olan oluyor.
+
+Bu şekilde olan yapılara nested block denir. if içinde if ya da for içinde for gibi
+
+--------
+Two way decision with else
+
+Burada da sorunun iki cevaptan birisini seçmesini bekliyoruz.
+
+if else şeklinde yapıyoruz.
+
+--------
+try/except 
+
+Hikâye: Mutfakta bir bardak süt almak istiyorsun. Annen sana diyor ki: “Önce buzdolabını açıp sütü almayı dene. Eğer süt yoksa ağlama, o zaman meyve suyu iç.”
+
+İşte try ve except tam olarak bu:
+
+try = “Bunu yapmayı dene.”
+except = “Eğer bir şey ters giderse, panik yapma, şunu yap.”
+
+-----------
+Functions
+Bizim defalarca aynı şeyleri yazmamamızı sağlıyor kısa ve öz. We're invoking the func. 
+def --> definations or we can say store phase, we could not call the func. we were represented our func.
+
+Building our fonctions,
+def ile tanımladığımız ksıımı tekrar call ediyoruz. Python def ile yazdığımız kısımları print etmiyor sadece store ediyor biz sonradan call edersek görebiliyoruz.
+
+Arguments;
+
+Arguments dediğimiz ise fonksiyonun içinde belirttiğimiz yer oluyor, parantez içindeki kısım. 
+
+def greets (land)  burada land Arguments oluyor yani fonksiyon içine koyduğumuz parametremiz. 
+	if land == 'es':
+		print('eng')
+----------------
+Return Values
+
+Return işlemi yapar ama printteki gibi bize göstermez sadece yapar ve sonucu tutar sonrasında o sonucu bir değişkene atayabilirsin veya kendin kullanabilirsin bu tamamen sana kalmış.
+-----------
+
+Multiple Paramaters/Arguments
+Birden fazla argüman kullanabilirsin fonksiyon içerisinde, bu tamamne sana bağlı.
+
+---------------
+Void
+
+Void return olmadığında otomatik algılıyor bunu python, olayı ise şudur tamamıyla fonksiyon çalışsın sadece bana bir şey dönmesine gerek yok dediğimiz kısımda işimize yarıyor. 
+
+--------------
+
+22. video da kaldım, py4e sitesinde de Exercise 4.6 de kaldım.
