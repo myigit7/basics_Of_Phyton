@@ -150,6 +150,7 @@ def greets (land)  burada land Arguments oluyor yani fonksiyon içine koyduğumu
 Return Values
 
 Return işlemi yapar ama printteki gibi bize göstermez sadece yapar ve sonucu tutar sonrasında o sonucu bir değişkene atayabilirsin veya kendin kullanabilirsin bu tamamen sana kalmış.
+Python returnden sonraki hiçbir kodu çalıştırmaz. Yani return görünce çalışmayı keser.
 -----------
 
 Multiple Paramaters/Arguments
