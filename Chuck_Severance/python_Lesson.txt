@@ -162,5 +162,25 @@ Void
 Void return olmadığında otomatik algılıyor bunu python, olayı ise şudur tamamıyla fonksiyon çalışsın sadece bana bir şey dönmesine gerek yok dediğimiz kısımda işimize yarıyor. 
 
 --------------
+Loops and Iterations
 
-22. video da kaldım, py4e sitesinde de Exercise 4.6 de kaldım.
+Looplar bize sürekli tekrar eden işlerimizi yapmamızda yardımcı olacak.
+
+Repeated Steps
+while loop un başında bir condition var bu condition sağlanmayana kadar yani T/F gibi düşün F olana kadar döngü devam eder. 
+While loop için indefinite loops deniyor çünkü false gelene kadar olan kısmı kendi içinde tutuyor.
+
+
+Infinite Looplar 
+Sonsuz döngüler condition her zaman true geliyor
+
+break
+bu komut loopların çıkış kapısıdır, pythın bunu görünce hemen çıkışa yönelir.
+
+continue
+bu satırı atla başa dön ve tekrar gel demek, onu kullandırtmayacak yani
+----------------
+
+Definite Loops (for) yani döngünün kaç defa döneceği önceden belirli demektir. for'un while'dan farkı budur. 
+
+26. videoda kaldım. 
