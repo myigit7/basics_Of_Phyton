@@ -175,7 +175,7 @@ Infinite Looplar
 Sonsuz döngüler condition her zaman true geliyor
 
 break
-bu komut loopların çıkış kapısıdır, pythın bunu görünce hemen çıkışa yönelir.
+bu komut loopların çıkış kapısıdır, python bunu görünce hemen çıkışa yönelir.
 
 continue
 bu satırı atla başa dön ve tekrar gel demek, onu kullandırtmayacak yani
@@ -183,4 +183,73 @@ bu satırı atla başa dön ve tekrar gel demek, onu kullandırtmayacak yani
 
 Definite Loops (for) yani döngünün kaç defa döneceği önceden belirli demektir. for'un while'dan farkı budur. 
 
-26. videoda kaldım. 
+Loop Idioms
+Loopların mantığını nasıl çalıştıklarını gördük, for loop içinde srasıyla gidiyor tüm value lar bu kısım önemli!!!!
+
+=== DÖNGÜDE SAYMA (Counting in a Loop) ===
+
+AMAÇ: Listede kaç eleman olduğunu saymak
+
+KALIP:
+sayac = 0                          # 1. Başlangıç: 0'dan başla
+for eleman in [9, 41, 12, 3, 74, 15]:
+    sayac = sayac + 1              # 2. Her turda 1 ekle
+    print(sayac, eleman)
+print('Toplam:', sayac)            # 3. Sonuca bak
+
+ÇIKTI:
+1 9
+2 41
+3 12
+4 3
+5 74
+6 15
+Toplam: 6
+
+MANTIK:
+- Elemanın DEĞERİ önemli değil, sadece VAR OLMASI önemli
+- Her turda sayaca +1 eklenir
+- Döngü bitince sayac = eleman sayısı
+
+DİKKAT:
+- sayac = 0 döngüden ÖNCE yazılır
+  (içine yazarsan her turda sıfırlanır!)
+- Sonuç döngü BİTTİKTEN sonra yazdırılır
+
+=== DÖNGÜDE TOPLAMA (Summing in a Loop) ===
+
+AMAÇ: Listedeki sayıların toplamını bulmak
+
+KALIP:
+toplam = 0                         # 1. Başlangıç: 0'dan başla
+for eleman in [9, 41, 12, 3, 74, 15]:
+    toplam = toplam + eleman       # 2. Her turda elemanı ekle
+    print(toplam, eleman)
+print('Toplam:', toplam)           # 3. Sonuca bak
+
+ÇIKTI:
+9 9
+50 41
+62 12
+65 3
+139 74
+154 15
+Toplam: 154
+
+MANTIK:
+- Bu sefer elemanın DEĞERİ önemli
+- Her turda o anki eleman toplama eklenir
+- Döngü bitince toplam = tüm sayıların toplamı
+
+SAYMA ile FARKI:
+- Sayma   -> sayac = sayac + 1       (hep 1 ekler)
+- Toplama -> toplam = toplam + eleman (elemanın kendisini ekler)
+
+DİKKAT:
+- toplam = 0 döngüden ÖNCE yazılır
+- Sonuç döngü BİTTİKTEN sonra yazdırılır
+
+ORTALAMA (ikisini birleştir):
+ortalama = toplam / sayac  -> 154 / 6 = 25.67
+
+27. video da kaldım Finding in average kısmında

@@ -1,0 +1,8 @@
+# 1. Stage all your modified or new files
+git add .
+
+# 2. Save your staged changes with a descriptive message
+git commit -m "Describe your changes here"
+
+# 3. Push the updates to your current branch (usually main)
+git push origin main
